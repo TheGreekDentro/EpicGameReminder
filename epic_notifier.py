@@ -36,8 +36,9 @@ def get_game_score(title):
 def score_to_stars(score):
     if score is None:
         return "Unrated"
-    rounded = round(score)
-    return "★" * rounded + "☆" * (5 - rounded)
+    clamped = min(round(score), 5)
+    return "★" * clamped + "☆" * (5 - clamped)
+
 
 def notify_user():
     toaster = ToastNotifier()
