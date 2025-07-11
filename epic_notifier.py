@@ -2,7 +2,7 @@ import requests
 from win10toast import ToastNotifier
 
 #       API key
-RAWG_API_KEY = "18ac49cd174d492bb1e387fc6301562a"
+RAWG_API_KEY = "API_KEY"
 
 def get_free_games():
     url = "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions"
